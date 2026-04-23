@@ -8,6 +8,20 @@ La Dependency Rule se cumple estrictamente: ninguna flecha de dependencia
 apunta hacia afuera. El paquete `domain/` no contiene ningún import de
 Spring ni de JPA.
 
+## Evidencias
+
+✔ POST /api/pedidos retorna 201 Created con el pedidoId en formato UUID
+<img width="532" height="357" alt="image" src="https://github.com/user-attachments/assets/597aebcb-cda5-4194-bded-4c3d85beabad" />
+
+✔ GET /api/pedidos/{id} retorna el pedido con todas sus líneas y el total calculado
+<img width="579" height="388" alt="image" src="https://github.com/user-attachments/assets/f105a9ca-eddf-47f1-9f5f-5d6a6e8aa3e4" />
+
+✔ POST con clienteNombre vacío retorna 400 con mensaje de error de dominio
+<img width="450" height="374" alt="image" src="https://github.com/user-attachments/assets/7b55d5ec-404d-477b-8312-3ac8f431446a" />
+
+✔ POST con cantidad de línea <= 0 retorna 400 con mensaje de error de dominio
+<img width="490" height="357" alt="image" src="https://github.com/user-attachments/assets/bafd76ec-8981-4a02-8cbe-2945c371143b" />
+
 ---
 
 ## Diagrama de Círculos Concéntricos
